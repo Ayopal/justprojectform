@@ -1,0 +1,126 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Figma Form To Code</title>
+
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<form action="submit">
+				<h1>Contact Form</h1>
+
+				<div class="formelement">
+					<label for="name">Name:</label>
+					<input type="text" class="formfield" placeholder="Enter your Name" />
+				</div>
+				<div class="formelement">
+					<label for="username">Username:</label>
+					<input
+						type="text"
+						class="formfield"
+						placeholder="Enter your username"
+					/>
+				</div>
+				<div class="formelement">
+					<label for="password">Password:</label>
+					<input
+						type="password"
+						class="formfield"
+						placeholder="Enter your Password"
+					/>
+				</div>
+				<div class="formelement">
+					<label for="retypepassword">Re-type Password:</label>
+					<input
+						type="retypepassword"
+						class="formfield"
+						placeholder="Enter your Passowrd"
+					/>
+				</div>
+
+				<div class="formradio">
+					<label for="gender" class="otherlabel">Gender:</label>
+					<div class="radiocontainer">
+						<div class="radio-input">
+							<input type="radio" value="male" name="male" class="radio" />
+							<label for="male" class="sublabel">Male</label>
+						</div>
+						<div class="radio-input">
+							<input type="radio" value="female" name="female" class="radio" />
+							<label for="male" class="sublabel">Female</label>
+						</div>
+					</div>
+				</div>
+				<div class="formcheck">
+					<label for="techskills" class="otherlabel">Techie Skills:</label>
+					<div class="checkboxcontainer">
+						<div class="checkbox-input">
+							<input
+								type="checkbox"
+								value="html"
+								name="html"
+								class="checkbox"
+							/>
+							<label for="html" class="sublabel">HTML</label>
+						</div>
+						<div class="checkbox-input">
+							<input type="checkbox" value="css" name="css" class="checkbox" />
+							<label for="male" class="sublabel">CSS</label>
+						</div>
+						<div class="checkbox-input">
+							<input
+								type="checkbox"
+								value="JavaScript"
+								name="JavaScript"
+								class="checkbox"
+							/>
+							<label for="male" class="sublabel">JavaScript</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="formelement">
+					<label for="phonenumber">Phone Number:</label>
+					<input
+						type="number"
+						class="formfield"
+						placeholder="Enter your address"
+					/>
+				</div>
+
+				<div class="formelement">
+					<label for="email">Email:</label>
+					<input
+						type="email"
+						class="formfield"
+						placeholder="Enter your Email address"
+					/>
+				</div>
+
+				<div class="formelement">
+					<label for="name">College:</label>
+					<select name="college" id="college" class="formfield">
+						<option
+							value="select a college"
+							selected="true"
+							disabled="disabled"
+						>
+							Select a College
+						</option>
+						<option value="Lautech">Lautceh</option>
+						<option value="ui">UI</option>
+						<option value="unilag">Unilag</option>
+					</select>
+				</div>
+
+				<button>Submit</button>
+			</form>
+		</div>
+	</body>
+</html>
